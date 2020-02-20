@@ -152,10 +152,7 @@ vm = new Vue({
     },
     events: {
       Lookup: [],
-      Null: [],
-      Null: [],
-      Null: [],
-    },
+        },
     toggles: {
       'Out of sight': [],
     },
