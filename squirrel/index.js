@@ -143,18 +143,18 @@ vm = new Vue({
   el: '#app',
   data: {
     states: {
-      Singing: [],
-      PerchNoSing: [],
-      Foraging: [],
-      Preening: [],
-      Flying: [],
-      Unknown: [],
+      Forage: [],
+      Preen: [],
+      Rest: [],
+      Freeze: [],
+      Stand: [],
+      Flee: [],
     },
     events: {
-      Head: [],
-      ChangePos: [],
-      Chat: [],
-      Hew: [],
+      Lookup: [],
+      Null: [],
+      Null: [],
+      Null: [],
     },
     toggles: {
       'Out of sight': [],
