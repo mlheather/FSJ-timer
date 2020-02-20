@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4/lodash.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="flex-column">
+      <h3>States</h3>
+      <div id="states" class="flex-row" style="justify-content: space-around;">
+        <state
+          v-for="(history, name) in states"
+          :key="name"
+          :name="name"
+          :active_state="active_state"
+          :history="history"
+          @set_active_state="set_active_state"
+        ></state>
+      </div>
+      <h3>Events</h3>
+      <div id="events" class="flex-row">
+        <event
+          v-for="(history, name) in events"
+          :key="name"
+          :name="name"
+          :history="history"
+        ></event>
+      </div>
+      <h3>Toggles</h3>
+      <div id="toggles" class="flex-row">
+        <toggle
+          v-for="(history, name) in toggles"
+          :key="name"
+          :name="name"
+          :history="history"
+        ></toggle>
+      </div>
+      <button id="download" type="button" @click="download">Download</button>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
