@@ -149,6 +149,7 @@ vm = new Vue({
       Freeze: [],
       Stand: [],
       Run: [],
+      Flee: [],
     },
     events: {
       Bark: [],
