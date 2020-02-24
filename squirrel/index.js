@@ -148,10 +148,10 @@ vm = new Vue({
       Rest: [],
       Freeze: [],
       Stand: [],
-      Flee: [],
+      Run: [],
     },
     events: {
-      Lookup: [],
+      Bark: [],
         },
     toggles: {
       'Out of sight': [],
