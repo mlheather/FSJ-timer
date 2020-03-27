@@ -144,18 +144,21 @@ vm = new Vue({
   data: {
     states: {
       Forage: [],
+      OSForage: [],
+      OS: [],
+      Sentinel: [],
+      TerrDef: [],
+      PredAvoid: [],
       Preen: [],
-      Rest: [],
-      Freeze: [],
-      Stand: [],
-      Run: [],
-      Flee: [],
+      Other: [],
     },
     events: {
-      Bark: [],
+      Small: [],
+      Med: [],
+      Large: [],
         },
     toggles: {
-      'Out of sight': [],
+      'Start/Timer': [],
     },
     active_state: null,
   },
@@ -184,7 +187,7 @@ vm = new Vue({
       const f = new File([csv], {type: 'text/csv'})
       const link = document.createElement('a')
       link.href = URL.createObjectURL(f)
-      link.download = 'mockingbird_data.csv'
+      link.download = 'FSJ_data.csv'
       link.click()
 
       // console.log(csv)
