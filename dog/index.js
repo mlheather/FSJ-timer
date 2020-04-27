@@ -156,6 +156,7 @@ vm = new Vue({
       Small: [],
       Med: [],
       Large: [],
+      Unknown: [],
         },
     toggles: {
       'Start/Timer': [],
